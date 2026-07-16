@@ -1,0 +1,20 @@
+model: two_tower
+subsample: ur0.01_ir0.01
+target: combined
+seed: 42
+ks:
+- 10
+- 50
+run_name: tt_emb_d32
+params:
+  tower_dim: 64
+  id_dim: 64
+  hidden: 128
+  epochs: 8
+  batch_size: 8192
+  lr: 0.005
+  temperature: 0.07
+  n_hard_negatives: 16
+  use_emb: true
+  emb_dim: 32
+  use_meta: false

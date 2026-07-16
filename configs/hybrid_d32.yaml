@@ -1,0 +1,16 @@
+run_name: ials_fallback_d32
+model: ials_content_fallback
+subsample: ur0.01_ir0.01
+target: combined
+seed: 42
+ks:
+- 10
+- 50
+confidence_weighting: true
+alpha: 20.0
+params:
+  factors: 128
+  regularization: 0.01
+  iterations: 20
+  dim: 32
+  cold_share: 0.1

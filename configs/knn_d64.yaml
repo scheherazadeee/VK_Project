@@ -1,0 +1,10 @@
+run_name: content_knn_d64
+model: content_knn
+subsample: ur0.01_ir0.01
+target: combined
+seed: 42
+ks:
+- 10
+- 50
+params:
+  dim: 64

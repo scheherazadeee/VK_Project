@@ -1,0 +1,14 @@
+run_name: ials_small
+model: ials
+subsample: up0.001_ip0.001
+target: combined
+seed: 42
+ks:
+- 10
+- 50
+confidence_weighting: true
+alpha: 20.0
+params:
+  factors: 128
+  regularization: 0.01
+  iterations: 20

@@ -1,0 +1,10 @@
+run_name: ease_small
+model: ease
+subsample: up0.001_ip0.001
+target: combined
+seed: 42
+ks:
+- 10
+- 50
+params:
+  l2: 200.0
