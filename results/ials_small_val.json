@@ -1,0 +1,74 @@
+{
+  "config": {
+    "run_name": "ials_small",
+    "model": "ials",
+    "subsample": "up0.001_ip0.001",
+    "target": "combined",
+    "seed": 42,
+    "ks": [
+      10,
+      50
+    ],
+    "confidence_weighting": true,
+    "alpha": 20.0,
+    "params": {
+      "factors": 128,
+      "regularization": 0.01,
+      "iterations": 20,
+      "seed": 42
+    }
+  },
+  "eval_split": "val",
+  "seed": 42,
+  "overall": {
+    "recall@10": 0.0019435048520866657,
+    "ndcg@10": 0.00198223005334142,
+    "recall@50": 0.008235191829725399,
+    "ndcg@50": 0.004156853406843718,
+    "map@10": 0.0007236606948297223
+  },
+  "item_slices": {
+    "cold_items": {
+      "recall@10": 0.0,
+      "ndcg@10": 0.0,
+      "recall@50": 0.0,
+      "ndcg@50": 0.0,
+      "map@10": 0.0
+    },
+    "warm_items": {
+      "recall@10": 0.0019435048520866657,
+      "ndcg@10": 0.00198223005334142,
+      "recall@50": 0.008235191829725399,
+      "ndcg@50": 0.004156853406843718,
+      "map@10": 0.0007236606948297223
+    },
+    "popular_items": {
+      "recall@10": 0.0,
+      "ndcg@10": 0.0,
+      "recall@50": 0.0,
+      "ndcg@50": 0.0,
+      "map@10": 0.0
+    }
+  },
+  "user_slices": {
+    "cold_users": {
+      "recall@10": 0.0,
+      "ndcg@10": 0.0,
+      "recall@50": 0.0,
+      "ndcg@50": 0.0,
+      "map@10": 0.0
+    },
+    "active_users": {
+      "recall@10": 0.0019435048520866657,
+      "ndcg@10": 0.00198223005334142,
+      "recall@50": 0.008235191829725399,
+      "ndcg@50": 0.004156853406843718,
+      "map@10": 0.0007236606948297223
+    }
+  },
+  "beyond_accuracy": {
+    "coverage@50": 0.8425638151525959,
+    "novelty@10": 13.918195633873493
+  },
+  "runtime_sec": 186.0
+}
